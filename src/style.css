@@ -4852,3 +4852,49 @@ img {
     font-size: 24px;
   }
 }
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #17100c;
+}
+
+.hero-background-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 10, 7, 0.92) 0%,
+    rgba(15, 10, 7, 0.76) 45%,
+    rgba(15, 10, 7, 0.4) 100%
+  );
+}
+
+.hero-section .hero-content,
+.hero-section .hero-visual {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-video-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(15, 10, 7, 0.78),
+      rgba(15, 10, 7, 0.68)
+    );
+  }
+}
