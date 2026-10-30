@@ -5067,3 +5067,123 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* =========================================
+   FOODHUB MOBILE NAVBAR
+========================================= */
+
+@media (max-width: 768px) {
+  .site-header .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  /* Logo - Left */
+  .site-header .brand-logo {
+    order: 1;
+    flex-shrink: 0;
+    margin-right: auto;
+  }
+
+  /* Order Now and Cart */
+  .site-header .nav-actions {
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .site-header .nav-search,
+  .site-header .login-button {
+    display: none;
+  }
+
+  .site-header .signup-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .site-header .cart-button {
+    flex-shrink: 0;
+  }
+
+  /* Hamburger - Right Corner */
+  .site-header .mobile-menu-button {
+    order: 3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    margin-left: 2px;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    background: #fff0d5;
+    color: #302018;
+    font-size: 27px;
+    cursor: pointer;
+  }
+
+  /* Dropdown Navigation */
+  .site-header .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 20px;
+    background: #fffaf3;
+    z-index: 999;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .site-header .nav-links.nav-open {
+    display: flex;
+  }
+
+  .site-header .nav-links a {
+    display: block;
+    padding: 14px 10px;
+    border-bottom: 1px solid #eee3d3;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .site-header .nav-container {
+    gap: 5px;
+  }
+
+  .site-header .brand-logo {
+    font-size: 27px;
+  }
+
+  .site-header .signup-button {
+    padding: 11px 10px;
+    font-size: 11px;
+  }
+
+  .site-header .mobile-menu-button {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+}
