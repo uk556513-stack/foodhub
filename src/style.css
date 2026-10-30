@@ -2189,7 +2189,156 @@ textarea:focus-visible {
   font-size: 11px;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .site-footer .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 8px;
+    box-sizing: border-box;
+  }
 
+  .site-footer .footer-bottom span {
+    display: block;
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.4;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+/* =========================================
+   FOOTER - MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .site-footer {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px 8px;
+    padding: 35px 12px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer-brand > p {
+    max-width: 100%;
+    margin: 10px auto 0;
+    font-size: 11px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .footer-socials a {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .footer-column {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 12px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+
+  .footer-column a {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .footer-bottom {
+    min-height: 50px;
+    padding: 10px 5px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .footer-bottom span {
+    white-space: nowrap;
+    font-size: 10px;
+  }
+}
+/* =========================================
+   FOOTER - MOBILE VIEW
+========================================= */
+
+@media (max-width: 480px) {
+
+  .footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 35px 15px;
+  }
+
+  .footer-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-brand > p {
+    max-width: 280px;
+    margin: 12px auto 0;
+    font-size: 12px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .footer-column {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .footer-column a {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 5px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom span {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+}
 /* =========================================
    ORDER CONFIRMATION
 ========================================= */
@@ -4752,4 +4901,169 @@ textarea:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+/* =========================================
+   IMAGE FULL CONTAINER FIX
+========================================= */
+
+/* All images */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Category Images */
+.category-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 0.88;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Restaurant Images */
+.restaurant-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.restaurant-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Popular Dish Images */
+.popular-dish-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.popular-dish-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* About Image */
+.about-photo {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Testimonial Images */
+.testimonial-avatar {
+  width: 48px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Filter Images */
+.filter-category-image {
+  width: 21px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* Cart Images */
+.cart-item img {
+  width: 75px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .restaurant-image,
+  .popular-dish-image {
+    height: auto;
+  }
+
+  .about-photo {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .restaurant-image,
+  .popular-dish-image {
+    height: auto;
+  }
+
+  .about-photo {
+    height: auto;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .restaurant-image,
+  .popular-dish-image {
+    height: auto;
+  }
+
+  .about-photo {
+    height: auto;
+  }
+}
+
+/* 360px */
+@media (max-width: 375px) {
+  .restaurant-image,
+  .popular-dish-image {
+    height: auto;
+  }
+
+  .about-photo {
+    height: auto;
+  }
+}
+.section-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-heading .section-kicker,
+.section-heading h2,
+.section-heading p {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
