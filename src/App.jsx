@@ -1,4 +1,3 @@
-
 import React, { useEffect, useMemo, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,7 +38,7 @@ import nikithaAvatar from "./assets/nikitha.jpg";
 import umeshAvatar from "./assets/umesh.jpg";
 
 import heroVideo from "./assets/food-hero.mp4";
-import cartBackground from "./assets/cart-background.jpg";
+
 
 // Categories
 const categories = [
@@ -298,12 +297,9 @@ function OrderConfirmation({ onClose, orderNumber, total }) {
           className="primary-button order-continue-button"
           onClick={onClose}
         >
-          Continue Exploring ↗
+          Continue your shop ↗
         </button>
 
-        <p className="demo-note">
-          Demo confirmation only. No real order has been placed.
-        </p>
       </div>
     </div>
   );
@@ -569,12 +565,9 @@ export default function App() {
               ⌕
             </a>
 
-            <a href="#restaurants" className="login-button">
-              Explore
-            </a>
 
             <a href="#restaurants" className="signup-button">
-              Order Now <span>↗</span>
+              Order Now 
             </a>
 
             <a href="#cart" className="cart-button" aria-label="Shopping cart">
@@ -626,8 +619,8 @@ export default function App() {
               </p>
 
               <div className="hero-highlights">
-                <span>✓ Freshly prepared</span>
-                <span>✓ Easy ordering</span>
+                <span>Freshly prepared</span>
+                <span>Easy ordering</span>
               </div>
 
               <form
@@ -684,16 +677,14 @@ export default function App() {
 
             <div className="section-heading" data-aos="fade-up">
               <div>
-                <span className="section-kicker">WHAT ARE YOU CRAVING?</span>
+                
                 <h2>
                   Explore <span>categories.</span>
                 </h2>
-                <p>A little something for every kind of craving.</p>
+                
               </div>
 
-              <a className="text-link" href="#restaurants">
-                Explore all <span>↗</span>
-              </a>
+              
             </div>
 
             <div className="category-grid">
@@ -725,7 +716,7 @@ export default function App() {
                     />
 
                     <strong>{category.name}</strong>
-                    <span className="category-arrow">↗</span>
+                    
                   </button>
                 ))}
             </div>
@@ -739,13 +730,11 @@ export default function App() {
 
             <div className="section-heading" data-aos="fade-up">
               <div>
-                <span className="section-kicker">HANDPICKED FOR YOU</span>
+                
                 <h2>
                   Restaurants you'll <span>love.</span>
                 </h2>
-                <p>
-                  Discover popular spots and your next favourite meal.
-                </p>
+                
               </div>
 
             </div>
@@ -824,11 +813,11 @@ export default function App() {
 
             <div className="section-heading" data-aos="fade-up">
               <div>
-                <span className="section-kicker">THE CROWD FAVOURITES</span>
+                
                 <h2>
                   Popular <span>picks.</span>
                 </h2>
-                <p>The delicious dishes everyone is talking about.</p>
+                
               </div>
             </div>
 
@@ -865,7 +854,7 @@ export default function App() {
                           });
                         }}
                       >
-                        Explore ↗
+                        show restaurants 
                       </button>
                     </div>
                   </div>
@@ -883,8 +872,7 @@ export default function App() {
             <div className="offer-banner" data-aos="zoom-in">
 
               <div className="offer-content">
-                <span className="offer-label">A LITTLE TREAT FROM US</span>
-
+                
                 <h2>
                   More flavour.
                   <br />
@@ -902,7 +890,7 @@ export default function App() {
                 </div>
 
                 <a href="#restaurants" className="offer-button">
-                  Explore restaurants ↗
+                  Shop Now 
                 </a>
               </div>
 
@@ -959,20 +947,9 @@ export default function App() {
                 />
               </div>
 
-              <div className="about-sticker">
-                <span>♥</span>
-                <strong>Made for<br />food lovers</strong>
-              </div>
-
-              <div className="about-caption">
-                A WORLD OF FLAVOUR
-              </div>
-
             </div>
 
             <div className="about-content" data-aos="fade-left">
-
-              <span className="section-kicker">A LITTLE ABOUT US</span>
 
               <h2>
                 Good food brings
@@ -1009,7 +986,7 @@ export default function App() {
               </div>
 
               <a href="#restaurants" className="primary-button">
-                Discover your favourites ↗
+                Discover your favourites 
               </a>
 
             </div>
@@ -1022,15 +999,12 @@ export default function App() {
           <div className="container">
 
             <div className="center-heading" data-aos="fade-up">
-              <span className="section-kicker">WHY FOODHUB?</span>
+             
 
               <h2>
                 Food ordering, <span>made better.</span>
               </h2>
 
-              <p>
-                Everything you need for a delightful food discovery experience.
-              </p>
             </div>
 
             <div className="benefits-grid">
@@ -1063,9 +1037,7 @@ export default function App() {
     {/* APP CONTENT */}
     <div className="app-content">
 
-      <span className="section-kicker">
-        YOUR FOOD WORLD, ANYWHERE
-      </span>
+     
 
       <h2>
         Big cravings?
@@ -1142,9 +1114,7 @@ export default function App() {
 
       </div>
 
-      <small className="demo-note">
-        App store buttons are demo UI elements.
-      </small>
+      
 
     </div>
 
@@ -1207,15 +1177,13 @@ export default function App() {
 
             <div className="section-heading" data-aos="fade-up">
               <div>
-                <span className="section-kicker">
-                  KIND WORDS, HAPPY TUMMIES
-                </span>
+                
 
                 <h2>
                   Foodies <span>say it best.</span>
                 </h2>
 
-                <p>Sample reviews for the FoodHub design demo.</p>
+               
               </div>
             </div>
 
@@ -1250,7 +1218,7 @@ export default function App() {
                       <span>{review.place}</span>
                     </div>
 
-                    <span className="verified-mark">✓</span>
+                    
 
                   </div>
                 </article>
@@ -1266,15 +1234,12 @@ export default function App() {
 
             <div className="faq-intro" data-aos="fade-right">
 
-              <span className="section-kicker">GOT QUESTIONS?</span>
+             
 
               <h2>
                 Good to <span>know.</span>
               </h2>
 
-              <p>
-                A few quick answers to help you get started with FoodHub.
-              </p>
 
             </div>
 
@@ -1324,9 +1289,6 @@ export default function App() {
                 Stay in the <span>food loop.</span>
               </h2>
 
-              <p>
-                Sign up for foodie updates, fresh inspiration and special offers.
-              </p>
             </div>
 
             <form
@@ -1353,26 +1315,17 @@ export default function App() {
         {/* CART */}
         <section
           className="cart-section section-padding"
-          id="cart"
-          style={{
-            backgroundImage: `linear-gradient(rgba(20,12,8,0.72), rgba(20,12,8,0.78)), url(${cartBackground})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "scroll",
-          }}
-        >
+          id="cart">
           <div className="container">
 
             <div className="section-heading" data-aos="fade-up">
               <div>
-                <span className="section-kicker">YOUR FOOD BAG</span>
-
+                
                 <h2>
                   Your <span>cart.</span>
                 </h2>
 
-                <p>Your selected items appear here.</p>
+               
               </div>
 
               <span className="results-count">
@@ -1397,7 +1350,7 @@ export default function App() {
                 <p>Explore our restaurants and add a favourite.</p>
 
                 <a href="#restaurants" className="primary-button">
-                  Explore food ↗
+                  Shop food 
                 </a>
               </div>
 
@@ -1475,12 +1428,8 @@ export default function App() {
                     className="primary-button"
                     onClick={handleCheckout}
                   >
-                    Continue to checkout ↗
+                    Continue to checkout 
                   </button>
-
-                  <p className="demo-note">
-                    Demo only: no real order or payment is processed.
-                  </p>
 
                 </div>
 
@@ -1496,10 +1445,6 @@ export default function App() {
           <div className="container contact-grid">
 
             <div data-aos="fade-right">
-
-              <span className="section-kicker">
-                WE'D LOVE TO HEAR FROM YOU
-              </span>
 
               <h2>
                 Let's talk <span>food.</span>
